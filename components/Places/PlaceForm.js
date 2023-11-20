@@ -7,8 +7,8 @@ import Button from "../UI/Button";
 
 function PlaceForm() {
   const [enteredTitle, setEnteredTitle] = useState("");
-  const [selectedImage, setSelectedImage] = useState("");
-  const [pickedLocation, setPickedLocation] = useState("");
+  const [selectedImage, setSelectedImage] = useState();
+  const [pickedLocation, setPickedLocation] = useState();
 
   function changeTitleHandler(enteredText) {
     setEnteredTitle(enteredText);
