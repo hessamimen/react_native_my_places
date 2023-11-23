@@ -20,6 +20,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [dbInitialized, setDbInitialized] = useState(false);
 
+  //Initialising the database
   useEffect(() => {
     init()
       .then(() => {
