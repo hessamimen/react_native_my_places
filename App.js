@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { init } from "./util/database";
 
 import * as SplashScreen from "expo-splash-screen";
+import PlaceDetails from "./screens/PlaceDetails";
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -68,11 +69,19 @@ export default function App() {
               title: "Add a new Place",
             }}
           />
+
           <Stack.Screen
             name="Map"
             component={Map}
             options={{
               title: "Map",
+            }}
+          />
+          <Stack.Screen
+            name="PlaceDetails"
+            component={PlaceDetails}
+            options={{
+              title: "Place Details",
             }}
           />
         </Stack.Navigator>
